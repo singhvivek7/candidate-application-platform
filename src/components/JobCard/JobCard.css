@@ -1,0 +1,28 @@
+.job-card {
+  max-width: 360px;
+  padding: 8px;
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .location {
+    font-size: 12px;
+  }
+  .salary {
+    margin-bottom: 8px;
+  }
+
+  .actions {
+    margin: 0 8px;
+  }
+
+  .min-exp-text {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .button {
+    margin-top: 16px;
+  }
+}

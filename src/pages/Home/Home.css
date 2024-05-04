@@ -1,0 +1,22 @@
+.home-wrapper {
+  width: 100%;
+  .job-section {
+    width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px 20px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .job-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .job-section {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
