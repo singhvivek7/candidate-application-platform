@@ -18,12 +18,20 @@ cd candidate-application-platform
 
 ```bash
 yarn install
+
+or
+
+npm install
 ```
 
 #### Step 4: run development server
 
 ```bash
 yarn dev
+
+or
+
+npm run dev
 ```
 
 Now it will start on http://localhost:5173/
