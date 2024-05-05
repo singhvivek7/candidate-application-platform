@@ -28,6 +28,14 @@
 
   .button {
     margin-top: 16px;
+    background: #55efc4;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+
+    &:hover {
+      background: #55efc4;
+    }
   }
 
   .show-more-button-wrapper {
@@ -38,6 +46,7 @@
     position: relative;
 
     .show-more-button {
+      text-transform: capitalize;
       &:hover {
         background: transparent;
       }
