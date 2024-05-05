@@ -1,5 +1,6 @@
 .home-wrapper {
   width: 100%;
+
   .job-section {
     width: 80%;
     margin: 10px auto;
@@ -7,6 +8,14 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 40px 20px;
+
+    .spinner {
+      height: 500px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media screen and (max-width: 1200px) {

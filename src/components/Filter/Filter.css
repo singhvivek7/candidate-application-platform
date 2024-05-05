@@ -1,0 +1,13 @@
+.filter-section {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .width-300 {
+    width: 300px;
+  }
+}

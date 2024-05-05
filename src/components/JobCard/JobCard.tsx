@@ -84,12 +84,17 @@ export const JobCard = ({
 
       <CardActions className="actions">
         <Stack sx={{ width: '100%' }}>
-          <Typography color="text.secondary" className="min-exp-text">
-            Minimum Experience
-          </Typography>
-          <Typography>{exp.join(' - ')} years</Typography>
+          {exp.length > 0 && (
+            <>
+              <Typography color="text.secondary" className="min-exp-text">
+                Minimum Experience
+              </Typography>
+              <Typography>{exp.join(' - ')} years</Typography>
+            </>
+          )}
           <Button
             href={jdLink}
+            target="_blank"
             aria-label="easy apply"
             variant="contained"
             className="button">
