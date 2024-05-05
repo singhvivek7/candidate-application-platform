@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 import { postRequest } from '@/config/request';
@@ -145,6 +145,9 @@ export const Home = () => {
 
   return (
     <div className="home-wrapper">
+      <Typography variant="h4" className="heading">
+        Candidate Application Platform
+      </Typography>
       <Filter />
       <Stack className="job-section">
         {filteredJdList.map(job => (

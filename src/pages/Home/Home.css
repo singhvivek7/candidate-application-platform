@@ -1,6 +1,11 @@
 .home-wrapper {
   width: 100%;
 
+  .heading {
+    text-align: center;
+    margin: 20px 10px;
+  }
+
   .job-section {
     width: 80%;
     margin: 10px auto;

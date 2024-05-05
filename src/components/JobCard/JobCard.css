@@ -1,6 +1,10 @@
 .job-card {
   max-width: 360px;
   padding: 8px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .title {
     font-size: 18px;
@@ -24,5 +28,53 @@
 
   .button {
     margin-top: 16px;
+  }
+
+  .show-more-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .show-more-button {
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to bottom, transparent, white);
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+}
+
+.line-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 0;
+
+  p {
+    font-size: 1rem;
+
+    &:first-child {
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+.dialog {
+  .title {
+    text-align: center;
   }
 }
