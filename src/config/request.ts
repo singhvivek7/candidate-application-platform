@@ -1,23 +1,3 @@
-// export const postRequest = async ({
-//   reqBody,
-//   url = 'adhoc/getSampleJdJSON', // will replace with env variable
-// }: {
-//   reqBody: {
-//     offset: number;
-//     limit: number;
-//   };
-//   url?: string;
-// }) => {
-//   const res = await axiosInstance.post(url, {
-//     body: reqBody,
-//   });
-
-//   if (!res.status) {
-//     throw new Error(res.statusText);
-//   }
-//   return await res.data;
-// };
-
 export const postRequest = async ({
   reqBody,
   url = 'https://api.weekday.technology/adhoc/getSampleJdJSON',
